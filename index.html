@@ -25,18 +25,21 @@
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
 <style>
+  .row {
+    margin: 20px 0px;
+  }
+
   .project-img {
     padding: 10px;
     border-radius: 20px;
+    width: 100%;
   }
   .project-text {
     padding: 10px;
     text-align: center;
   }
-  #projects {
-    padding: 100px 0 70px;
-  }
-  
+
+
 </style>
 </head>
 
@@ -47,7 +50,7 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<div class="fullscreen landing parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+<div class="fullscreen landing parallax" style="background-image:url('img/bg/bgTop.png');" data-img-width="2000" data-img-height="1333" data-diff="100">
 
   <div class="overlay">
 		<div class="container">
@@ -55,7 +58,7 @@
 				<div class="col-md-7">
 
 					<!-- /.logo -->
-					<div class="wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
+					<!-- <div class="wow fadeInDown"> <a href=""><img src="img/logo.png" alt="logo"></a></div> -->
 
 					<!-- /.main title -->
 						<h1 class="wow fadeInLeft">
@@ -71,8 +74,10 @@
 
 					<!-- /.header button -->
 					<div class="head-btn wow fadeInLeft">
-						<a href="#projects" class="btn-primary">Projects</a>
-						<a href="#team" class="btn-default">Team</a>
+            <a href="#about" class="btn-default">About</a>
+            <a href="#projects" class="btn-primary">Projects</a>
+						<a href="#team" class="btn-primary">Team</a>
+
 					</div>
 				</div>
 			</div>
@@ -92,9 +97,7 @@
 				  <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand site-name" href="#top">
-          <div style="margin-top: -2px; text-align: center;">
-            HIP PROJECTS <br> LOGO
-          </div>
+          <img src="/img/icons/HIP-Logo-RGB.png"/>
         </a>
 			  </div>
 
@@ -114,20 +117,22 @@
 <div id="intro">
 	<div class="container">
 		<div class="row">
-
       <!-- /.intro image -->
-  			<div class="col-md-6 intro-pic wow slideInLeft">
-  				<img src="images/intro-image.gif" alt="image" class="img-responsive">
-  			</div>
-        <div class="col-md-6 wow slideInRight">
-				<h2>HIP Projects is where it's at, fam.</h2>
-				<p>We build the heck out of stuff and make gobs of cash doing it!</p>
-
-					<div class="btn-section"><a href="#feature" class="btn-default">Learn More</a></div>
-
+			<div class="col-md-6 intro-pic wow slideInLeft">
+				<img src="img/bg/intro_pic.png" alt="intro image" class="img-responsive">
 			</div>
+      <div class="col-md-6 wow slideInRight">
+				<h2>HIP Projects, LLC</h2>
+        <h3>START WITH WHY</h3>
+				<p>People don't buy what we do, they buy why we do it.  HIP Projects is all creating a
+          great community for our guests, residents and the surrounding offices and homes. Our aim
+          is to foster connections between people by providing a central meeting place, a “heart”
+          to the broader community. Similar to a European village square.
+        </p>
+				<div class="btn-section"><a href="#projects" class="btn-default">Learn More</a></div>
+		  </div>
 		</div>
-	</div>
+  </div>
 </div>
 <!-- /.feature section -->
 <div id="projects">
@@ -141,25 +146,38 @@
 		<div class="row package-option">
 
       <!-- /.project 1 -->
-      <div class="col-sm-4">
+      <div class="row">
+      <div class="col-sm-12">
         <div class="price-box wow fadeInUp">
           <div class="price-heading text-center">
 
             <!-- /.project image link -->
             <a href="http://www.paramount355.com/" target="_blank">
-              <img src="https://iareintelligent.github.io/HIP_landing_page/images/project1.png" class="project-img"/>
+              <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+              <img src="img/projects/watkins_mill.png" class="project-img"/>
             </a>
 
             <!-- /.project name -->
-            <h3>Paramount 355</h3>
+            <h3>Watkins Mill Town Center</h3>
           </div>
 
           <div class="project-text">
-            <p>Something something Paramount because we're amazing</p>
+            <p>
+              At its heart of the Spectrum is Performers Park, which features a large splash pad fountain
+              and a permanent stage for performances and events. Spectrum's residential component includes
+              the 224-unit Paramount East and West apartments and the Majestic, a 243-unit luxury apartment
+              with both public and gated residential parking. The Spectrum is part of the larger Watkins
+              Mill Town Center, slated to include 4.5 million square feet of Class A office, hotel,
+              restaurants, retail and more than 2,200 homes and apartment units.
+            </p>
           </div>
 
         </div>
       </div>
+    </div>
+
+    <div class="row">
+
 
       <!-- /.project 2 -->
       <div class="col-sm-4">
@@ -167,29 +185,118 @@
           <div class="price-heading text-center">
 
             <!-- /.project image link -->
-            <a href="http://www.270majestic.com/" target="_blank">
-              <img src="https://iareintelligent.github.io/HIP_landing_page/images/project1.png" class="project-img"/>
+            <a href="http://www.paramount355.com/" target="_blank">
+              <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+              <img src="img/projects/paramount_west.png" class="project-img"/>
             </a>
 
             <!-- /.project name -->
-            <h3>270 Majestic</h3>
+            <h3>Paramount West</h3>
           </div>
 
           <div class="project-text">
-            <p>(Coming soon: 271 Majestic).</p>
+            <p>
+              Providing the architectural edge of Performers Park, Paramount West is a multi-use
+              apartment building located in the heart of The Spectrum. Paramount West will include
+              ground level restaurants and will stimulate the environment within Performers Park and
+              the restaurant space within Paramount will utilize outdoor seating on the park.
+
+            </p>
           </div>
 
         </div>
       </div>
 
-      <!-- /.project 3 -->
+      <!-- /.Performer's Park -->
+      <div class="col-sm-4">
+        <div class="price-box wow fadeInUp">
+          <div class="price-heading text-center">
+
+            <!-- /.project image link -->
+            <a href="http://www.paramount355.com/" target="_blank">
+              <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+              <img src="img/projects/performers_park.png" class="project-img"/>
+            </a>
+
+            <!-- /.project name -->
+            <h3>Performer's Park</h3>
+          </div>
+
+          <div class="project-text">
+            <p>
+              Performers Park will provide an exciting place for the community to come and be
+              entertained. A splash pad will provide outdoor fun for children and a stage with
+              programmed events will provide entertainment for people of all ages. The park will
+              be used for large community events and shows.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+  <!-- /Paramount East -->
+  <div class="col-sm-4">
+    <div class="price-box wow fadeInUp">
+      <div class="price-heading text-center">
+
+        <!-- /.project image link -->
+        <a href="http://www.paramount355.com/" target="_blank">
+          <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+          <img src="img/projects/paramount_east.png" class="project-img"/>
+        </a>
+
+        <!-- /.project name -->
+        <h3>Paramount East</h3>
+      </div>
+
+      <div class="project-text">
+        <p>
+          Paramount East is a large apartment building located directly across from Performers Park.
+          Paramount East provides an amenity rich experience for the residence as well as ground
+          level retail for residents and visitors alike.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+      <!-- /Majestic -->
+      <div class="col-sm-4">
+        <div class="price-box wow fadeInUp">
+          <div class="price-heading text-center">
+
+            <!-- /.project image link -->
+            <a href="http://www.270majestic.com/" target="_blank">
+              <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+              <img src="img/projects/the_majestic.png" class="project-img"/>
+            </a>
+
+            <!-- /.project name -->
+            <h3>The Majestic</h3>
+          </div>
+
+          <div class="project-text">
+            <p>
+              The largest apartment building within Spectrum, the majestic includes three
+              outdoor terraces and a plethora of indoor amenity space overlooking Performers Park.
+              The Majestic includes ground level retail and restaurant units.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- /Barking Mad-->
       <div class="col-sm-4">
         <div class="price-box wow fadeInUp">
           <div class="price-heading text-center">
 
             <!-- /.project image link -->
             <a href="//www.barkingmadcafe.com/home" target="_blank">
-              <img src="https://iareintelligent.github.io/HIP_landing_page/images/project1.png" class="project-img"/>
+              <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+              <img src="img/projects/barking_mad.png" class="project-img"/>
             </a>
 
             <!-- /.project name -->
@@ -197,7 +304,13 @@
           </div>
 
           <div class="project-text">
-            <p>No barking allowed on premesis.</p>
+            <p>
+              With 100+ outdoor seats that overlook Performer's Park, Barking Mad Cafe offers
+              super premium coffee and scratch-baked sweets and savories Pizzas are cooked in a wood 
+              hearth, farm-to-table food is paired with specialty cocktails and house
+              infusions. A number of ingredients are grown on-site with our aeroponic, organic
+              garden where we grow vegetables, herbs and edible flowers.
+            </p>
           </div>
 
         </div>
@@ -205,9 +318,141 @@
     </div>
   </div>
 </div>
+
+<!-- Team Section -->
+<div class="container client">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-circle" src="img/shawn.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Shawn Kyzer</h2>
+            <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/shawn-kyzer-msit-mba-b5b8a4b" role="button"><i class="fa fa-linkedin-square"></i>
+              LinkedIn  </a>
+            <p class="description">
+                Shawn has led and participated in numerous information technology projects in both public and private sectors. As an avid open source developer and a data science practitioner. He also delivers custom solutions by incorporating his knowledge of software
+                development and big data analytics.
+            </p>
+
+        </div>
+        <!-- /.col-md-4 -->
+
+        <div class="col-md-4">
+            <img class="img-circle" src="img/michael.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Michael Guild</h2>
+            <div class="btn-group" role="group" aria-label="...">
+                <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/michaelguild" role="button"><i class="fa fa-linkedin-square"></i>
+                LinkedIn  </a>
+                <a target="_blank" class="btn btn-info" href="https://docs.google.com/document/d/1S5xjZxeA3_8R2KegrgGrvakVoCiC5wQCPGlbeBKc1M0/edit?usp=sharing" role="button"><i class="fa fa-globe"></i>
+                Portfolio</a>
+            </div>
+            <p class="description">
+                Michael has over 10 years of experience in the field of web & application development with a passion for cutting edge technology. He also has a background in UI/UX Design for product development and has helped guide product owners towards success. He
+                has a love for the open source community in given talks, trainings, and leading teams to success with a flat organization philosophy.
+            </p>
+
+        </div>
+        <!-- /.col-md-4 -->
+
+        <div class="col-md-4">
+            <img class="img-circle" src="img/daniel.jpg" width="140" height="140">
+            <h2>Daniel Schep</h2>
+            <div class="btn-group" role="group" aria-label="...">
+                <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/daniel-schep-b1400870" role="button"><i class="fa fa-linkedin-square"></i>
+                LinkedIn  </a>
+                <a target="_blank" class="btn btn-info" href="http://schep.me/work" role="button"><i class="fa fa-globe"></i>
+                Portfolio</a>
+            </div>
+            <p class="description">
+                Daniel is a Full-Stack developer who specializes in Python & Django. He has many open source projects and loves working on the cutting edge. These days he likes working with Python 3's asyncio, Docker, and Go.
+            </p>
+
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-circle" src="img/joe_curtin.jpg" width="140" height="140">
+            <h2>Joseph Curtin</h2>
+            <div class="btn-group" role="group" aria-label="...">
+                <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/jbcurtin" role="button"><i class="fa fa-linkedin-square"></i>
+            LinkedIn  </a>
+                <a target="_blank" class="btn btn-info" href="https://jbcurtin.io/" role="button"><i class="fa fa-globe"></i>
+            Portfolio</a>
+            </div>
+            <p class="description">
+                Joseph Curtin has tailored his experience around deploying Secured High Availability services. He regularly consults with DC, Chicago, and LA based firms to advise on big data topologies. Being a functional programming practitioner, Joseph has solid roots
+                in Object Oriented Programming concepts. Django is Joseph's go to for Enterprise web applications.
+            </p>
+
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+            <img class="img-circle" src="img/mario.jpg" width="140" height="140">
+            <h2>Mario Starks</h2>
+            <div class="btn-group" role="group" aria-label="...">
+                <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/mariostarks" role="button"><i class="fa fa-linkedin-square"></i>
+          LinkedIn  </a>
+                <a target="_blank" class="btn btn-info" href="http://www.mariostarks.com/" role="button"><i class="fa fa-globe"></i>
+          Portfolio</a>
+            </div>
+            <p class="description">
+                Mario Starks is a creative technologist based in New York City. He has several years experience working with media publications as a senior web developer and content strategist, helping editorial teams present engaging stories in an interactive format.
+                His work as a full-stack developer and content strategist has appeared on Tribune online media properties including OrlandoSentinel.com, as well as TV One, Washingtonian Magazine, and the Starbuck’s Digital Network.
+            </p>
+
+        </div>
+
+        <div class="col-md-4">
+            <img class="img-circle" src="img/scott.jpg" width="140" height="140">
+            <h2>Scott Kingdon</h2>
+            <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/kingdon" role="button"><i class="fa fa-linkedin-square"></i>
+            LinkedIn  </a>
+            <p class="description">
+                Scott is a Senior Software Developer who has over 15 years experience practicing software architecture, programming and management. Scott thrives in building web and mobile applications both at the hands-on programming level and the high-level design/architectural
+                level. Scott’s intimate knowledge of software architecture and ability to relate to computer programmers has made him an highly effective leader for technology-based projects.
+            </p>
+
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- Row -->
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-4">
+            <img class="img-circle" src="img/topher.jpg" width="140" height="140">
+            <h2>Topher Sikorra</h2>
+            <div class="btn-group" role="group" aria-label="...">
+            <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/topher-sikorra-b21828b" role="button"><i class="fa fa-linkedin-square"></i>
+              LinkedIn</a>
+            <a target="_blank" class="btn btn-info" href="https://iareintelligent.github.io/tophs-portfolio/" role="button"><i class="fa fa-globe"></i>
+              Portfolio</a>
+            </div>
+            <p class="description">
+                Toph is a former US Marine and aerospace engineer turned jr. front-end developer. His "there are no shortcuts" philosophy drives his scripting style, relying heavily upon best practices and producing highly readble and reusable code.
+            </p>
+
+      </div>
+
+
+        <!-- /.col-md-4 -->
+
+        <div class="col-md-4">
+            <img class="img-circle" src="img/selma.jpg" width="140" height="140">
+            <h2>Selma Nunes</h2>
+            <a target="_blank" class="btn btn-info" href="https://www.linkedin.com/in/selmanunes" role="button"><i class="fa fa-linkedin-square"></i>
+            LinkedIn</a>
+            <p class="description">
+                Selma is a jr. front-end web developer who is currently dabbling in python and Angular. Along with 10 years of strategic planning, spearheading and revamping start up programs, non-profits and community development.
+            </p>
+
+        </div><!-- /.col-md-4 -->
+    </div>
+</div>
 <!-- /.contact section -->
 <div id="contact">
-	<div class="contact fullscreen parallax" style="background-image:url('images/bg2.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+	<div class="contact fullscreen parallax" style="background-image:url('img/bg2.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
 		<div class="overlay">
 			<div class="container">
 				<div class="row contact-row">
