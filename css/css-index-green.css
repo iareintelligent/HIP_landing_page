@@ -23,8 +23,8 @@ body {
 }
 h1 { font-size: 3em; line-height:1.2em; margin:0 0 .3em; }
 h2 { font-size: 1.8em; line-height:1.4em; margin:0 0 .3em;  }
-h3 { font-size: 1.4em; line-height:1.4em; }
-h4 { font-size: 1.25em; line-height:1.4em;}
+h3 { font-size: 1.4em; line-height:1.4em; color: #a13223;}
+h4 { font-size: 1.25em; line-height:1.4em;color: #a13223;}
 h5 { font-size: 1.1em; line-height:1.4em; }
 h6 { font-size: 1em; line-height:1.2em; }
 
@@ -34,9 +34,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 p {
 	padding: 0 0 1em;
 	margin:0;
+	color: #1d2954;
 }
 a {
-	color: #7cb854;
+	color: #008064; //7cb854;
 	outline: 0;
 	font-weight: bold;
 	-webkit-transition: all .8s ease;
@@ -49,7 +50,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .highlight {
-	color: #7cb854;
+	color: #008064; //7cb854;
 }
 #preloader {
 	position: fixed;
@@ -62,11 +63,11 @@ a:hover {
 	background: #fff url(../images/loading.gif) no-repeat center center;
 }
 .fullscreen {
-    width:100%;
+    //width:100%;
     min-height:100%;
 	background-repeat:no-repeat;
-    background-position:50% 50%;
-    background-position:50% 50%\9 !important;
+    /*background-position:50% 50%;
+    background-position:50% 50%\9 !important;*/
 }
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -91,13 +92,13 @@ a:hover {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #7cb854;
+    color: #008064; //7cb854;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background: transparent;
-    color: #7cb854;
+    color: #008064; //7cb854;
 }
 .btn-default {
 	font-size: 17px;
@@ -106,15 +107,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #7cb854;
+	border: 2px solid #008064; //7cb854;
 	background: transparent;
 	transition: all 0.4s;
-	color: #7cb854;
+	color: #008064; //7cb854;
 	border-radius: 100px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-	border: 2px solid #7cb854;
-	background: #7cb854;
+	border: 2px solid #008064; //7cb854;
+	background: #008064; //7cb854;
 	color: white;
 }
 .btn-primary {
@@ -124,16 +125,16 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #7cb854;
-	background: #7cb854;
+	border: 2px solid #008064; //7cb854;
+	background: #008064; //7cb854;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 100px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid #7cb854;
+	border: 2px solid #008064; //7cb854;
 	background: transparent;
-	color: #7cb854;
+	color: #008064; //7cb854;
 }
 .btn-secondary {
 	font-size: 20px;
@@ -142,7 +143,7 @@ a:hover {
 	padding: 20px 50px;
 	height: 65px;
 	border: none;
-	background: #7cb854;
+	background: #008064; //7cb854;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 4px;
@@ -218,7 +219,7 @@ a:hover {
 	border-radius: 0;
 	height: 55px;
 	width: 100%;
-	background-color: #7cb854;
+	background-color: #008064; //7cb854;
 	color: white;
 	font-size: 17px !important;
 	padding: 0 33px;
@@ -247,10 +248,10 @@ a:hover {
 #policy {
 	padding: 100px 0 70px;
 }
-#intro {
+#about {
 	padding: 100px 0 70px;
 }
-#intro h2 {
+#about h2 {
 	font-size: 40px;
 	font-weight: 300;
 	margin: 15px 0 15px 0;
@@ -291,7 +292,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .feat-list:hover i {
-	color: #7cb854;
+	color: #008064; //7cb854;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -341,7 +342,7 @@ a:hover {
 }
 .subscribe-form button {
 	border-radius: 0 4px 4px 0;
-	background-color: #7cb854;
+	background-color: #008064; //7cb854;
 	color: #ffffff;
 	font-size: 1em;
 	line-height: 52px;
@@ -381,7 +382,7 @@ a:hover {
     width: 100px;
     height: 3px;
     margin: 0 auto;
-    background: #7cb854;
+    background: #008064; //7cb854;
 }
 .price-box {
 	border: solid 1px #d1d1d1;
@@ -409,7 +410,7 @@ a:hover {
 	bottom: 48px;
 }
 .price-group .price {
-	color: #7cb854;
+	color: #008064; //7cb854;
 	font-size: 90px;
 	font-weight: 500;
 }
@@ -428,7 +429,7 @@ a:hover {
 	font-size: 17px;
 	padding: 7px 35px;
 	height: 40px;
-	background: #7cb854;
+	background: #008064; //7cb854;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 4px;
@@ -488,10 +489,10 @@ a:hover {
 }
 .testi-item .client-info .company {
 	font-style: italic;
-	color: #7cb854;
+	color: #008064; //7cb854;
 }
 .owl-theme .owl-controls .owl-page span{
-	background: #7cb854;
+	background: #008064; //7cb854;
 }
 .video-header {
 	margin: 40px 0 30px;
@@ -545,7 +546,7 @@ a:hover {
 	margin-left: 15px;
 	position: absolute;
 	left: 0;
-	color: #7cb854;
+	color: #008064; //7cb854;
 	font-size: 25px;
 	line-height: 30px;
 }
@@ -577,7 +578,7 @@ a:hover {
 #contact-form .btn {
 	height: 55px;
 	width: 100%;
-	background-color: #7cb854;
+	background-color: #008064; //7cb854;
 	color: #ffffff;
 	font-size: 17px !important;
 	line-height: 18px;
@@ -611,16 +612,16 @@ a:hover {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	color: #7cb854;
+	color: #008064; //7cb854;
 	border-radius: 50%;
 	background: #fff;
-	border: solid 1px #7cb854;
+	border: solid 1px #008064; //7cb854;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
 .social li a:hover {
 	color: #fff;
-	background: #7cb854;
+	background: #008064; //7cb854;
 }
 #shortcode-basic {
 	padding: 70px 0 10px;
@@ -647,7 +648,7 @@ a:hover {
 	padding: 50px 0 10px;
 }
 .social-icons i {
-	color: #7cb854;
+	color: #008064; //7cb854;
 	font-size: 30px;
 	line-height: 40px
 }
@@ -674,7 +675,7 @@ a:hover {
 	margin-right: 20px;
 }
 .table > thead > tr > th {
-	background: #7cb854;
+	background: #008064; //7cb854;
 	color: #fff;
 	border-bottom: 0;
 	text-transform: uppercase;
@@ -708,7 +709,7 @@ a:hover {
 	display: none;
 }
 .scrollToTop:hover{
-	color: #7cb854;
+	color: #008064; //7cb854;
 }
 .control-group .controls {
 	overflow-x: hidden;
@@ -731,16 +732,19 @@ and (orientation : portrait) {
 	.btn-price {
 		padding: 7px 25px;
 	}
-	#intro {
+	#about {
 		padding: 30px 0 50px;
 	}
 	#policy {
 		padding: 30px 0 50px;
 	}
-	#intro h2, #projects-2 h2 {
+	#about h2, #projects-2 h2 {
 		text-align: center;
 	}
-	#intro p, #projects-2 p {
+	#about h3, #projects-2 h3 {
+		text-align: center;
+	}
+	#about p, #projects-2 p {
 		text-align: center;
 	}
 	.btn-section {
@@ -828,17 +832,22 @@ and (orientation : landscape) {
 	.signup-header {
 		margin: 70px 0 80px;
 	}
-	#intro {
+	#about {
 		padding: 70px 0 70px;
 	}
 	#policy {
 		padding: 70px 0 70px;
 	}
-	#intro h2, #projects-2 h2 {
+	#about h2, #projects-2 h2 {
 		font-weight: 150;
 		text-align: center;
 	}
-	#intro p, #projects-2 p {
+	#about h3, #projects-2 h3 {
+		font-weight: 150;
+		text-align: center;
+	}
+
+	#about p, #projects-2 p {
 		text-align: center;
 	}
 	.btn-section {
@@ -927,7 +936,7 @@ and (orientation : landscape) {
 	.landing-text p {
 		font-size: 16px !important;
 	}
-	#intro {
+	#about {
 		padding-top: 50px;
 	}
 	#policy {
@@ -979,7 +988,7 @@ and (orientation : landscape) {
 
 /* smart phone width: 360px ----------- */
 @media (max-width: 360px) {
-	#intro h2, #projects h2, #projects-2 h2 {
+	#about h2, #projects h2, #projects-2 h2 {
 		font-size: 30px;
 	}
 	.feat-list i {

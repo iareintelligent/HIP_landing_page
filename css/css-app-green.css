@@ -16,7 +16,7 @@ body {
 	margin:0;
 	font-size:16px;
 	line-height: 28px;
-	color: #777; 
+	color: #777;
 	background: #fff;
 	overflow-x:hidden;
 	position: relative;
@@ -30,18 +30,18 @@ h6 { font-size: 1em; line-height:1.2em; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none
-}	 
-p { 
+}
+p {
 	padding:0 0 1em;
 	margin:0;
 }
 a {
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 	outline: 0;
 	font-weight: bold;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
-} 
+}
 a:hover {
 	text-decoration: none;
 	color: #1f2222;
@@ -49,16 +49,16 @@ a:hover {
 	transition: all .8s ease;
 }
 .highlight {
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 }
-#preloader { 
-	position: fixed; 
-	left: 0; 
-	top: 0; 
-	z-index: 999; 
-	width: 100%; 
-	height: 100%; 
-	overflow: visible; 
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
 	background: #fff url(../images/loading.gif) no-repeat center center;
 }
 .fullscreen {
@@ -91,13 +91,13 @@ a:hover {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #7cb854;
+    color: #1d2954; //7cb854;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background: transparent;
-    color: #7cb854;
+    color: #1d2954; //7cb854;
 }
 .btn-default {
 	font-size: 17px;
@@ -106,15 +106,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #7cb854;
+	border: 2px solid #1d2954; //7cb854;
 	background: transparent;
 	transition: all 0.4s;
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 	border-radius: 100px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-	border: 2px solid #7cb854;
-	background: #7cb854;
+	border: 2px solid #1d2954; //7cb854;
+	background: #1d2954; //7cb854;
 	color: white;
 }
 .btn-primary {
@@ -124,16 +124,16 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #7cb854;
-	background: #7cb854;
+	border: 2px solid #1d2954; //7cb854;
+	background: #1d2954; //7cb854;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 100px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid #7cb854;
+	border: 2px solid #1d2954; //7cb854;
 	background: transparent;
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 }
 .btn-secondary {
 	font-size: 20px;
@@ -142,7 +142,7 @@ a:hover {
 	padding: 20px 50px;
 	height: 65px;
 	border: none;
-	background: #7cb854;
+	background: #1d2954; //7cb854;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 4px;
@@ -152,14 +152,14 @@ a:hover {
 	color: white
 }
 .site-name img{
-	width: 150px; 
+	width: 150px;
 	height: 37px
 }
 .logo {
 	margin: 100px 0 40px 0;
 }
 .logo img{
-	width: 150px; 
+	width: 150px;
 	height: 37px
 }
 .landing h1{
@@ -176,7 +176,7 @@ a:hover {
 	margin-bottom: 20px;
 }
 .landing-text p {
-	font-size: 17px !important; 
+	font-size: 17px !important;
 }
 .more {
 	margin-bottom: 100px;
@@ -201,7 +201,7 @@ a:hover {
 	margin-right: 10px;
 }
 .option:hover {
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 }
 .header-phone {
 	margin: 50px 0 100px;
@@ -250,7 +250,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .feat-list:hover i {
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -279,9 +279,9 @@ a:hover {
 	height: 100px;
 	line-height: 100px;
 	font-size: 50px;
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 	border-radius: 50%;
-	border: solid 1px #7cb854;
+	border: solid 1px #1d2954; //7cb854;
 }
 .subscribe p {
 	margin: 30px auto 30px;
@@ -310,7 +310,7 @@ a:hover {
 }
 .subscribe-form button {
 	border-radius: 0 4px 4px 0;
-	background-color: #7cb854;
+	background-color: #1d2954; //7cb854;
 	color: #ffffff;
 	font-size: 1em;
 	line-height: 52px;
@@ -334,14 +334,14 @@ a:hover {
 .subscribe-form .form-control::-webkit-input-placeholder {
 	color: #333;
 }
-.subscribe-form .form-control:-moz-placeholder { 
-	color: #333;  
+.subscribe-form .form-control:-moz-placeholder {
+	color: #333;
 }
-.subscribe-form .form-control::-moz-placeholder { 
-	color: #333;  
+.subscribe-form .form-control::-moz-placeholder {
+	color: #333;
 }
-.subscribe-form .form-control:-ms-input-placeholder {  
-	color: #333;  
+.subscribe-form .form-control:-ms-input-placeholder {
+	color: #333;
 }
 #screenshot {
 	padding-top: 100px;
@@ -350,7 +350,7 @@ a:hover {
     width: 100px;
     height: 3px;
     margin: 0 auto;
-    background: #7cb854;
+    background: #1d2954; //7cb854;
 }
 .screenshots {
     padding-top: 50px;
@@ -370,7 +370,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .screenshots .screen img:hover {
-	border: solid 3px #7cb854;
+	border: solid 3px #1d2954; //7cb854;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -480,10 +480,10 @@ a:hover {
 }
 .testi-item .client-info .company {
 	font-style: italic;
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 }
 .owl-theme .owl-controls .owl-page span{
-	background: #7cb854;
+	background: #1d2954; //7cb854;
 }
 .action {
 	color: #fff;
@@ -506,9 +506,9 @@ a:hover {
 	width: 195px;
 	position: relative;
 	border-radius: 4px;
-} 
+}
 .iphone {
-	background: #7cb854;
+	background: #1d2954; //7cb854;
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -570,23 +570,23 @@ a:hover {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 	border-radius: 50%;
 	background: #fff;
-	border: solid 1px #7cb854;
+	border: solid 1px #1d2954; //7cb854;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
 .social li a:hover {
 	color: #fff;
-	background: #7cb854;
+	background: #1d2954; //7cb854;
 }
 .scrollToTop{
-	width: 40px; 
+	width: 40px;
 	height: 40px;
 	padding: 5px;
 	font-size: 30px;
-	text-align: center; 
+	text-align: center;
 	background: rgba(0, 0, 0, 0.2);
 	color: white;
 	position: fixed;
@@ -596,15 +596,15 @@ a:hover {
 	display: none;
 }
 .scrollToTop:hover{
-	color: #7cb854;
+	color: #1d2954; //7cb854;
 }
 .control-group .controls {
 	overflow-x: hidden;
 }
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : portrait) {
 	.more {
 		margin-bottom: 50px;
@@ -638,20 +638,20 @@ and (orientation : portrait) {
 	#client img {
 		margin: 10px 0 10px;
 		max-height: 40px;
-	}	
+	}
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : landscape) {
 	.logo {
 		margin: 100px 0 30px 0;
 	}
 	.landing h1{
 		margin: 60px 0 60px 0;
-	}	
+	}
 	.landing-text {
 		margin: 60px 0 40px 0;
 	}
@@ -666,7 +666,7 @@ and (orientation : landscape) {
 	}
 	.feature-img {
 		margin-top: 30px;
-	}	
+	}
 	.feat-list {
 		margin-top: 10px;
 	}
@@ -678,7 +678,7 @@ and (orientation : landscape) {
 	}
 	#client img {
 		max-height: 45px;
-	}	
+	}
 }
 
 /* smart-phone ----------- */
@@ -710,8 +710,8 @@ and (orientation : landscape) {
 	}
 	#client img {
 		margin: 10px 0 10px;
-	}	
-}	
+	}
+}
 /* iPhone 6Plus (landscape) ----------- */
 @media (max-width: 736px) {
 
@@ -756,7 +756,7 @@ and (orientation : landscape) {
 		margin: 20px 0 10px 0;
 	}
 	.landing-text p {
-		font-size: 16px !important; 
+		font-size: 16px !important;
 	}
 	#intro {
 		padding-top: 50px;
@@ -772,7 +772,7 @@ and (orientation : landscape) {
 	}
 	#screenshot {
 		padding-top: 70px;
-	}	
+	}
 	.screenshots {
 		padding-top: 30px;
 		padding-bottom: 70px;
@@ -788,8 +788,8 @@ and (orientation : landscape) {
 		margin: 50px 0 20px;
 	}
 	.download-text p {
-		line-height: 1.5;	
-	}	
+		line-height: 1.5;
+	}
 	.download-store {
 		padding: 10px 0 70px;
 	}
@@ -818,7 +818,7 @@ and (orientation : landscape) {
 	}
 	.appstorebutton {
 		margin-bottom: 15px;
-	} 
+	}
 	.download-store li {
 		margin-left: 0;
 	}
