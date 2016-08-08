@@ -101,8 +101,8 @@ call fullscreenFix() if .fullscreen content changes */
 //         }
 //     });
 // }
-$(window).resize(fullscreenFix);
-fullscreenFix();
+// $(window).resize(fullscreenFix);
+// fullscreenFix();
 
 /* resize background images */
 function backgroundResize(){
