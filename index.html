@@ -57,15 +57,60 @@
      background-image:url('img/bg/bgTop.png');
      background-size: 100% auto;
   }
-  .navLink {
-    padding: 15px;
-  }
   #contact{
-    background-image: url('img/bg/bg.jpg');
+    background-image: url('img/bg/bg.png');
   }
   #footerCopyright {
     font-size: 14px;
   }
+  .overlay {
+    background-color: rgba(0, 0, 0, .15);
+  }
+  .btn-primary {
+    padding: 0px 35px;
+    margin: 0;
+    border: 1px solid #008266;
+  }
+  .btn-primary:hover {
+    background-color: #008266;
+  }
+  .btn-primary > a {
+    color: white;
+  }
+  .btn-info {
+    background-color: #7cb854;
+    color: #fff;
+    border-color: #008266;
+  }
+  #team-top {
+    padding-top: 50px;
+  }
+  .intro-pic {
+    margin-top: 0px;
+  }
+  @media (max-width: 450px) {
+    .navLink {
+      margin-bottom: 10px;
+    }
+    #navAbout {
+      padding: 0px 100px;
+    }
+    #navProjects {
+      padding: 0px 94px;
+    }
+    #navTeam {
+      padding: 0px 103px;
+    }
+    header h1, nav {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+    intro-pic {
+      margin-top: 0px;
+    }
+  }
+
 </style>
 </head>
 
@@ -98,10 +143,10 @@
           </div>
 
           <!-- /.header button -->
-          <nav class="head-btn wow fadeInLeft btn-group">
-            <a href="#about" title="about hip projects" class="btn-primary navLink">About <span class="sr-only">HIP Projects</span></a>
-            <a href="#projects" title="real estate development projects by hip" class="btn-primary navLink"><span class="sr-only">Real estate development </span>Projects <span class="sr-only">by HIP</span></a>
-            <a href="#download" title="meet the hip team" class="btn-primary navLink"><span class="sr-only">Meet the HIP </span>Team</a>
+          <nav class="head-btn wow fadeInLeft">
+            <button type="button" class="btn btn-primary navLink" id="navAbout"><a href="#about" title="about hip projects">About <span class="sr-only">HIP Projects</span></a></button>
+            <button type="button" class="btn btn-primary navLink" id="navProjects"><a href="#projects" title="real estate development projects by hip"><span class="sr-only">Real estate development </span>Projects <span class="sr-only">by HIP</span></a></button>
+            <button type="button" class="btn btn-primary navLink" id="navTeam"><a href="#download" title="meet the hip team"><span class="sr-only">Meet the HIP </span>Team</a></button>
           </nav>
         </div>
       </div>
@@ -346,7 +391,7 @@
       <div class="title-line wow fadeInLeft"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="team-top">
     <div class="col-sm-4">
         <img class="img-circle" src="img/team/leigh.png" alt="Leigh Henry profile pic" width="140" height="140">
         <h2>Leigh Henry</h2>
