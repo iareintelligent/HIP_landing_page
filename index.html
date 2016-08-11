@@ -53,7 +53,13 @@
   #contactGreen .highlight {
     color: #7cb854;
   }
-
+  #headerBG {
+     background-image:url('img/bg/bgTop.png');
+     background-size: 100% auto;
+  }
+  .navLink {
+    padding: 15px;
+  }
 </style>
 </head>
 
@@ -64,7 +70,7 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<div class="fullscreen landing parallax" style="background-image:url('img/bg/bgTop.png'); background-size: 100%; auto" data-img-width="2000" data-img-height="1333" data-diff="100">
+<header class="fullscreen landing parallax" id="headerBG" data-img-width="2000" data-img-height="1333" data-diff="100">
   <div class="overlay">
 		<div class="container">
 			<div class="row">
@@ -86,17 +92,17 @@
 					</div>
 
 					<!-- /.header button -->
-					<div class="head-btn wow fadeInLeft btn-group">
-            <a href="#about" class="btn-primary" style="padding: 15px;">About</a>
-            <a href="#projects" class="btn-primary"  style="padding: 15px;">Projects</a>
-						<a href="#download" class="btn-primary" style="padding: 15px;">Team</a>
+					<nav class="head-btn wow fadeInLeft btn-group">
+            <a href="#about" title="about hip projects" class="btn-primary navLink">About <span class="sr-only">HIP Projects</span></a>
+            <a href="#projects" title="" class="btn-primary navLink" >Projects</a>
+						<a href="#download" class="btn-primary navLink">Team</a>
 
-					</div>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</header>
 
 <!-- NAVIGATION -->
 <div id="menu">
@@ -110,16 +116,16 @@
 				  <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand site-name" href="#top">
-          <img src="img/icons/HIP-Logo-RGB.png"/>
+          <img src="img/icons/HIP-Logo-RGB.png" alt="HIP Projects Logo"/>
         </a>
 			  </div>
 
 			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
 				<ul class="nav navbar-nav">
-					<li><a href="#intro">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#download">Team</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#intro" title="about hip projects">About <span class="sr-only">HIP Projects</span></a></li>
+					<li><a href="#projects" title="real estate development projects by hip"><span class="sr-only">Real estate development </span>Projects <span class="sr-only">by HIP</span></a></li>
+					<li><a href="#download" title="meet the hip team"><span class="sr-only">Meet the HIP </span>Team</a></li>
+					<li><a href="#contact" title="contact us">Contact </a><span class="sr-only">us</span></li>
 				</ul>
 			  </div>
 		</div>
@@ -127,7 +133,7 @@
 </div>
 
 <!-- About Section -->
-<div id="about">
+<section id="about">
 	<div class="container">
 		<div class="row">
       <!-- /.intro image -->
@@ -142,7 +148,9 @@
           is to foster connections between people by providing a central meeting place, a "heart"
           to the broader community. Similar to a European village square.
         </p>
-				<div class="btn-section"><a href="#projects" class="btn-default">Learn More</a></div>
+				<div class="btn-section">
+          <a href="#projects" title"learn more about hip projects" class="btn-default">Learn More <span class="sr-only">about HIP Projects</span></a>
+        </div>
 		  </div>
 		</div>
   </div>
@@ -166,7 +174,7 @@
               <!-- /.project image link -->
               <a href="http://www.paramount355.com/" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/watkins_mill.png" class="project-img"/>
+                <img src="img/projects/watkins_mill.png" alt="Watkins Mill" class="project-img"/>
               </a>
 
               <!-- /.project name -->
@@ -195,7 +203,7 @@
               <!-- /.project image link -->
               <a href="http://www.paramount355.com/" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/paramount_west.png" class="project-img"/>
+                <img src="img/projects/paramount_west.png" alt="Paramount West" class="project-img"/>
               </a>
 
               <!-- /.project name -->
@@ -223,7 +231,7 @@
               <!-- /.project image link -->
               <a href="http://www.paramount355.com/" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/performers_park.png" class="project-img"/>
+                <img src="img/projects/performers_park.png" alt="Performer's Park" class="project-img"/>
               </a>
 
               <!-- /.project name -->
@@ -250,7 +258,7 @@
               <!-- /.project image link -->
               <a href="http://www.paramount355.com/" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/paramount_east.png" class="project-img"/>
+                <img src="img/projects/paramount_east.png" alt="Paramount East" class="project-img"/>
               </a>
 
               <!-- /.project name -->
@@ -276,7 +284,7 @@
               <!-- /.project image link -->
               <a href="http://www.270majestic.com/" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/the_majestic.png" class="project-img"/>
+                <img src="img/projects/the_majestic.png" alt="The Majestic" class="project-img"/>
               </a>
               <!-- /.project name -->
               <h3>The Majestic</h3>
@@ -298,7 +306,7 @@
               <!-- /.project image link -->
               <a href="//www.barkingmadcafe.com/home" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/barking_mad.png" class="project-img"/>
+                <img src="img/projects/barking_mad.png" alt="Barking Mad" class="project-img"/>
               </a>
 
               <!-- /.project name -->
