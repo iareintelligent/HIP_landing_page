@@ -24,6 +24,8 @@
 
 <!-- Google Fonts -->
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
 <style>
   .row {
     margin: 20px 0px;
@@ -55,7 +57,7 @@
   }
   #headerBG {
      background-image:url('img/bg/bgTop.png');
-     background-size: 100% auto;
+     background-size: auto 100%;
   }
   #contact{
     background-image: url('img/bg/bg.png');
@@ -88,6 +90,32 @@
   .intro-pic {
     margin-top: 0px;
   }
+  header {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    /* Firefox */
+    height: -moz-calc(100vh - 50px);
+    /* WebKit */
+    height: -webkit-calc(100vh - 50px);
+    /* Opera */
+    height: -o-calc(100vh - 50px);
+    /* Standard */
+    height: calc(100vh - 50px);
+  }
+  header p {
+    padding: 0;
+    color: #fff;
+  }
+  header h1, nav, p {
+    text-align: center;
+  }
+  header .container {
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
   @media (max-width: 450px) {
     .navLink {
       margin-bottom: 10px;
@@ -110,6 +138,9 @@
       margin-top: 0px;
     }
   }
+  #hipLogo {
+    height: 35px;
+  }
 
 </style>
 </head>
@@ -121,11 +152,11 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<header class="fullscreen landing parallax" id="headerBG" data-img-width="2000" data-img-height="1333" data-diff="100">
+<header class="parallax" id="headerBG" data-img-width="1036" data-img-height="505" data-diff="100">
   <div class="overlay">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-offset-2 col-md-8">
 
           <!-- /.logo -->
           <!-- <div class="wow fadeInDown"> <a href=""><img src="img/logo.png" alt="logo"></a></div> -->
@@ -141,13 +172,6 @@
             HIP Projects is a real company.  Don't believe us?  Just check out this fancy website. The internet wouldn't lie.
           </p>
           </div>
-
-          <!-- /.header button -->
-          <nav class="head-btn wow fadeInLeft">
-            <button type="button" class="btn btn-primary navLink" id="navAbout"><a href="#about" title="about hip projects">About <span class="sr-only">HIP Projects</span></a></button>
-            <button type="button" class="btn btn-primary navLink" id="navProjects"><a href="#projects" title="real estate development projects by hip"><span class="sr-only">Real estate development </span>Projects <span class="sr-only">by HIP</span></a></button>
-            <button type="button" class="btn btn-primary navLink" id="navTeam"><a href="#download" title="meet the hip team"><span class="sr-only">Meet the HIP </span>Team</a></button>
-          </nav>
         </div>
       </div>
     </div>
@@ -166,7 +190,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand site-name" href="#top">
-          <img src="img/icons/hip_logo.png" title="main navigation" alt="HIP Projects Logo"/>
+          <img src="img/icons/hip_logo.png" id="hipLogo" title="main navigation" alt="HIP Projects Logo"/>
         </a>
         </div>
 
