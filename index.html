@@ -27,6 +27,9 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
 <style>
+  .container {
+    max-width: 1800px;
+  }
   .row {
     margin: 20px 0px;
   }
@@ -143,17 +146,21 @@
     height: 35px;
   }
   #topLogo {
-    height: 250px;
+    max-height: 250px;
     background-color: rgba(203, 236, 181, .35);
-    margin-bottom: 15px;
     border-radius: 25px;
     padding: 15px;
+    margin: auto;
   }
   #about {
     text-align: center;
   }
   .price-box {
     border: 2px solid rgb(88, 150, 47);
+  }
+  .widescreen {
+    max-width: 1650px;
+    margin: auto;
   }
 
 </style>
@@ -166,7 +173,8 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<header class="parallax" id="headerBG" data-img-width="1036" data-img-height="505" data-diff="100">
+
+<header class="parallax widescreen" id="headerBG" data-img-width="1036" data-img-height="505" data-diff="100">
   <div class="overlay">
     <div class="container">
       <div class="row">
@@ -176,7 +184,7 @@
           <!-- <div class="wow fadeInDown"> <a href=""><img src="img/logo.png" alt="logo"></a></div> -->
 
           <!-- /.main title -->
-          <img class="wow fadeInDown" id="topLogo" src="img/icons/HIP-Logo-RGB.png" title="Welcome to HIP Projects LLC!" alt="HIP Projects, LLC">
+          <img class="wow fadeInDown img-responsive" id="topLogo" src="img/icons/HIP-Logo-RGB.png" title="Welcome to HIP Projects LLC!" alt="HIP Projects, LLC">
           <!-- /.header paragraph -->
           <div class="landing-text wow fadeInUp">
           <p>
@@ -477,7 +485,7 @@
 </section>
 
 <!-- /.contact section -->
-<section id="contact">
+<section id="contact" class="widescreen">
   <div class="contact fullscreen parallax" data-img-width="2000" data-img-height="1334" data-diff="100">
     <div class="overlay">
       <div class="container">
