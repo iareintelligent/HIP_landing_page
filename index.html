@@ -150,7 +150,7 @@ display:block;
     top: 40%;
     transform: translateY(-50%);
   }
-  @media (max-width: 600px) {
+  @media (max-width: 992px) {
     .vertical-text {
     margin-top:50px;
     border: none;
@@ -220,9 +220,13 @@ display:block;
   #about {
     text-align: center;
   }
-  .price-box {
+  .price-box-left {
     border: 2px solid rgb(88, 150, 47);
     border-left: none;
+  }
+  .price-box-right {
+    border: 2px solid rgb(88, 150, 47);
+    border-right: none;
   }
 
 </style>
@@ -323,8 +327,7 @@ display:block;
     <hr></hr>
 
     <div class="row">
-
-      <div class="col-sm-12 price-box">
+      <div class="col-sm-12 price-box-left">
         <h3>Watkins Mill Town Center</h3>
         <hr/>
         <div class="col-xs-2"> <!-- required for floating -->
@@ -345,7 +348,7 @@ display:block;
               <!-- /.project name -->
               <h3>Watkins Mill Overview</h3>
               <!-- /.project image link -->
-              <a href="http://www.paramount355.com/" title="Watkins Mill Website" target="_blank">
+              <a href="http://www.spectrumatwatkinsmill.com/" title="Watkins Mill Website" target="_blank">
                 <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
                 <img src="img/projects/watkins_mill.png" alt="Watkins Mill" class="project-img"/>
               </a>
@@ -481,25 +484,34 @@ display:block;
 
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 price-box-right">
+        <h3>Some Other Community</h3>
+        <hr/>
+        <div class="col-xs-2"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left vertical-text">
+            <li class="active"><a href="#overview-v2" data-toggle="tab">Overview</a></li>
+            <li><a href="#paramount-v2" data-toggle="tab">Paramount</a></li>
+            <li><a href="#majestic-v2" data-toggle="tab">Majestic</a></li>
+            <li><a href="#performersPark-v2" data-toggle="tab">Performer's Park</a></li>
+            <li><a href="#barkingMad-v2" data-toggle="tab">Barking Mad Cafe</a></li>
+          </ul>
+        </div>
 
-    <div class="row package-option">
-      <div class="row">
-        <!-- /OVERALL -->
-        <div class="col-sm-12">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
-
-              <!-- /.project image link -->
-              <a href="http://www.paramount355.com/" title="Watkins Mill Website" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/watkins_mill.png" alt="Watkins Mill" class="project-img"/>
-              </a>
-
+        <div class="col-xs-10 tab-content">
+          <!-- Tab panes -->
+          <div class="tab-pane active" id="overview-v2">
+            <div class="col-xs-12 col-md-6 price-heading text-center">
               <!-- /.project name -->
-              <h3>Watkins Mill Town Center</h3>
+              <h3>Some Other Overview</h3>
+              <!-- /.project image link -->
+              <a href="http://www.spectrumatwatkinsmill.com/" title="Watkins Mill Website" target="_blank">
+                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                <img src="img/projects/other_community.png" alt="Watkins Mill" class="project-img"/>
+              </a>
             </div>
-
-            <div class="project-text">
+            <div class="col-xs-12 col-md-6 project-text">
               <p>
                 At its heart of the Spectrum is Performers Park, which features a large splash pad fountain
                 and a permanent stage for performances and events. Spectrum's residential component includes
@@ -510,140 +522,127 @@ display:block;
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- /.project 2 -->
-        <div class="col-sm-4">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
+          <div class="tab-pane" id="paramount-v2">
+              <div class="col-sm-6">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center">
+                    <!-- /.project image link -->
+                    <a href="http://www.paramount355.com/" title="paramount west at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/paramount_west.png" alt="Paramount West" class="project-img"/>
+                    </a>
+                    <!-- /.project name -->
+                    <h3>Paramount West</h3>
+                  </div>
+                  <div class="project-text">
+                    <p>
+                      Providing the architectural edge of Performers Park, Paramount West is a multi-use
+                      apartment building located in the heart of The Spectrum. Paramount West will include
+                      ground level restaurants and will stimulate the environment within Performers Park and
+                      the restaurant space within Paramount will utilize outdoor seating on the park.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center">
+                    <!-- /.project image link -->
+                    <a href="http://www.paramount355.com/" title="paramount east at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/paramount_east.png" alt="Paramount East" class="project-img"/>
+                    </a>
 
-              <!-- /.project image link -->
-              <a href="http://www.paramount355.com/" title="paramount west at watkins mill" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/paramount_west.png" alt="Paramount West" class="project-img"/>
-              </a>
-
-              <!-- /.project name -->
-              <h3>Paramount West</h3>
-            </div>
-
-            <div class="project-text">
-              <p>
-                Providing the architectural edge of Performers Park, Paramount West is a multi-use
-                apartment building located in the heart of The Spectrum. Paramount West will include
-                ground level restaurants and will stimulate the environment within Performers Park and
-                the restaurant space within Paramount will utilize outdoor seating on the park.
-
-              </p>
-            </div>
-
+                    <!-- /.project name -->
+                    <h3>Paramount East</h3>
+                  </div>
+                  <div class="project-text">
+                    <p>
+                      Paramount East is a large apartment building located directly across from Performers Park.
+                      Paramount East provides an amenity rich experience for the residence as well as ground
+                      level retail for residents and visitors alike.
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
+          <div class="tab-pane" id="majestic-v2">
+            <div class="col-sm-12">
+              <div class="wow fadeInUp">
+                <div class="price-heading text-center col-sm-6">
+                  <!-- /.project name -->
+                  <h3>The Majestic</h3>
+                  <!-- /.project image link -->
+                  <a href="http://www.270majestic.com/" title="the majestic at watkins mill" target="_blank">
+                    <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                    <img src="img/projects/the_majestic.png" alt="The Majestic" class="project-img"/>
+                  </a>
 
-        <!-- /.Performer's Park -->
-        <div class="col-sm-4">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
-
-              <!-- /.project image link -->
-              <a href="http://www.paramount355.com/" title="performer's park at watkins mill" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/performers_park.png" alt="Performer's Park" class="project-img"/>
-              </a>
-
-              <!-- /.project name -->
-              <h3>Performer's Park</h3>
-            </div>
-
-            <div class="project-text">
-              <p>
-                Performers Park will provide an exciting place for the community to come and be
-                entertained. A splash pad will provide outdoor fun for children and a stage with
-                programmed events will provide entertainment for people of all ages. The park will
-                be used for large community events and shows.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- /Paramount East -->
-        <div class="col-sm-4">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
-
-              <!-- /.project image link -->
-              <a href="http://www.paramount355.com/" title="paramount east at watkins mill" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/paramount_east.png" alt="Paramount East" class="project-img"/>
-              </a>
-
-              <!-- /.project name -->
-              <h3>Paramount East</h3>
-            </div>
-
-            <div class="project-text">
-              <p>
-                Paramount East is a large apartment building located directly across from Performers Park.
-                Paramount East provides an amenity rich experience for the residence as well as ground
-                level retail for residents and visitors alike.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- /Majestic -->
-        <div class="col-sm-4">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
-              <!-- /.project image link -->
-              <a href="http://www.270majestic.com/" title="the majestic at watkins mill" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/the_majestic.png" alt="The Majestic" class="project-img"/>
-              </a>
-              <!-- /.project name -->
-              <h3>The Majestic</h3>
-            </div>
-            <div class="project-text">
-              <p>
-                The largest apartment building within Spectrum, the majestic includes three
-                outdoor terraces and a plethora of indoor amenity space overlooking Performers Park.
-                The Majestic includes ground level retail and restaurant units.
-              </p>
+                </div>
+                <div class="project-text col-sm-6">
+                  <p>
+                    The largest apartment building within Spectrum, the majestic includes three
+                    outdoor terraces and a plethora of indoor amenity space overlooking Performers Park.
+                    The Majestic includes ground level retail and restaurant units.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- /Barking Mad-->
-        <div class="col-sm-4">
-          <div class="price-box wow fadeInUp">
-            <div class="price-heading text-center">
-
-              <!-- /.project image link -->
-              <a href="//www.barkingmadcafe.com/home" title="barking mad cafe at watkins mill" target="_blank">
-                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
-                <img src="img/projects/barking_mad.png" alt="Barking Mad" class="project-img"/>
-              </a>
-
-              <!-- /.project name -->
-              <h3>Barking Mad Cafe</h3>
-            </div>
-
-            <div class="project-text">
-              <p>
-                With 100+ outdoor seats that overlook Performer's Park, Barking Mad Cafe offers
-                super premium coffee and scratch-baked sweets and savories Pizzas are cooked in a wood
-                hearth, farm-to-table food is paired with specialty cocktails and house
-                infusions. A number of ingredients are grown on-site with our aeroponic, organic
-                garden where we grow vegetables, herbs and edible flowers.
-              </p>
+          <div class="tab-pane" id="performersPark-v2">
+            <div class="col-sm-12">
+              <div class="wow fadeInUp">
+                <div class="price-heading text-center col-sm-6">
+                  <!-- /.project name -->
+                  <h3>Performer's Park</h3>
+                  <!-- /.project image link -->
+                  <a href="http://www.paramount355.com/" title="performer's park at watkins mill" target="_blank">
+                    <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                    <img src="img/projects/performers_park.png" alt="Performer's Park" class="project-img"/>
+                  </a>
+                </div>
+                <div class="project-text col-sm-6">
+                  <p>
+                    Performers Park will provide an exciting place for the community to come and be
+                    entertained. A splash pad will provide outdoor fun for children and a stage with
+                    programmed events will provide entertainment for people of all ages. The park will
+                    be used for large community events and shows.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="tab-pane" id="barkingMad-v2">
+              <div class="col-sm-12">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center col-sm-6">
+                    <!-- /.project name -->
+                    <h3>Barking Mad Cafe</h3>
+                    <!-- /.project image link -->
+                    <a href="//www.barkingmadcafe.com/home" title="barking mad cafe at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/barking_mad.png" alt="Barking Mad" class="project-img"/>
+                    </a>
+                  </div>
+                  <div class="project-text col-sm-6">
+                    <p>
+                      With 100+ outdoor seats that overlook Performer's Park, Barking Mad Cafe offers
+                      super premium coffee and scratch-baked sweets and savories Pizzas are cooked in a wood
+                      hearth, farm-to-table food is paired with specialty cocktails and house
+                      infusions. A number of ingredients are grown on-site with our aeroponic, organic
+                      garden where we grow vegetables, herbs and edible flowers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
+
+        <div class="clearfix"></div>
+
       </div>
     </div>
+
   </div>
 </section>
 
