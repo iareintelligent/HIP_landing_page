@@ -1,3 +1,7 @@
+// Tabbed Panels
+
+
+
 /* smooth scroll */
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

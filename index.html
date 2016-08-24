@@ -27,9 +27,40 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
 <style>
-  .container {
-    max-width: 1800px;
-  }
+/*!
+* bootstrap-vertical-tabs - v1.1.0
+* https://dbtek.github.io/bootstrap-vertical-tabs
+* 2014-06-06
+* Copyright (c) 2014 Ä°smail Demirbilek
+* License: MIT
+*/
+.tabs-left{
+border-bottom: none;
+padding-top: 2px;
+}
+.tabs-left {
+border-right: 1px solid #ddd;
+}
+.tabs-left>li {
+float: none;
+margin-bottom: 2px;
+}
+.tabs-left>li {
+margin-right: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+border-bottom-color: #ddd;
+border-right-color: transparent;
+}
+.tabs-left>li>a {
+border-radius: 4px 0 0 4px;
+margin-right: 0;
+display:block;
+}
+
+
   .row {
     margin: 20px 0px;
   }
@@ -119,7 +150,41 @@
     top: 40%;
     transform: translateY(-50%);
   }
-
+  @media (max-width: 600px) {
+    .vertical-text {
+    margin-top:50px;
+    border: none;
+    position: relative;
+    }
+    .vertical-text>li {
+    height: 20px;
+    width: 120px;
+    margin-bottom: 100px;
+    }
+    .vertical-text>li>a {
+    border-bottom: 1px solid #ddd;
+    border-right-color: transparent;
+    text-align: center;
+    border-radius: 4px 4px 0px 0px;
+    }
+    .vertical-text>li.active>a,
+    .vertical-text>li.active>a:hover,
+    .vertical-text>li.active>a:focus {
+    border-bottom-color: transparent;
+    border-right-color: #ddd;
+    border-left-color: #ddd;
+    }
+    .vertical-text.tabs-left {
+    left: -50px;
+    }
+    .vertical-text.tabs-left>li {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    }
+  }
   @media (max-width: 450px) {
     .navLink {
       margin-bottom: 10px;
@@ -146,35 +211,31 @@
     height: 35px;
   }
   #topLogo {
-    max-height: 250px;
+    height: 250px;
     background-color: rgba(203, 236, 181, .35);
+    margin-bottom: 15px;
     border-radius: 25px;
     padding: 15px;
-    margin: auto;
   }
   #about {
     text-align: center;
   }
   .price-box {
     border: 2px solid rgb(88, 150, 47);
-  }
-  .widescreen {
-    max-width: 1650px;
-    margin: auto;
+    border-left: none;
   }
 
 </style>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-scroll">
-
+<!-- <body data-spy="scroll" data-target="#navbar-scroll"> -->
+<body>
 <!-- /.preloader -->
 <div id="preloader"></div>
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-
-<header class="parallax widescreen" id="headerBG" data-img-width="1036" data-img-height="505" data-diff="100">
+<header class="parallax" id="headerBG" data-img-width="1036" data-img-height="505" data-diff="100">
   <div class="overlay">
     <div class="container">
       <div class="row">
@@ -184,12 +245,14 @@
           <!-- <div class="wow fadeInDown"> <a href=""><img src="img/logo.png" alt="logo"></a></div> -->
 
           <!-- /.main title -->
-          <img class="wow fadeInDown img-responsive" id="topLogo" src="img/icons/HIP-Logo-RGB.png" title="Welcome to HIP Projects LLC!" alt="HIP Projects, LLC">
+          <img class="wow fadeInDown" id="topLogo" src="img/icons/HIP-Logo-RGB.png" title="Welcome to HIP Projects LLC!" alt="HIP Projects, LLC">
           <!-- /.header paragraph -->
           <div class="landing-text wow fadeInUp">
-          <p>
-            HIP Projects is a real company.  Don't believe us?  Just check out this fancy website. The internet wouldn't lie.
-          </p>
+          <h2>
+            We build communities, not neighborhoods <br/>
+          </h2>
+            <em>(Have your marketing person come up with something catchier)</em>
+
           </div>
         </div>
       </div>
@@ -209,7 +272,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand site-name" href="#top">
-          <img src="img/icons/hip_logo.png" id="hipLogo" title="main navigation" alt="HIP Projects Logo"/>
+          <img src="img/icons/hip_horizontal.png" id="hipLogo" title="main navigation" alt="HIP Projects Logo"/>
         </a>
         </div>
 
@@ -230,16 +293,16 @@
   <div class="container">
     <div class="row">
       <!-- /.intro image -->
-      <div class="col-md-6 intro-pic wow slideInLeft">
+      <div class="col-md-6 intro-pic wow slideInLeft thumbnail">
         <img src="img/bg/intro_pic.png" alt="intro image" class="img-responsive">
       </div>
       <div class="col-md-6 wow slideInRight">
         <h2>HIP Projects, LLC</h2>
         <h3>START WITH WHY</h3>
-        <p>People don't buy what we do, they buy why we do it.  HIP Projects is all creating a
+        <p>HIP Projects' primary focus is on creating a
           great community for our guests, residents and the surrounding offices and homes. Our aim
-          is to foster connections between people by providing a central meeting place, a "heart"
-          to the broader community. Similar to a European village square.
+          is to foster connections between people by providing central meeting places, "hearts"
+          to the broader communities. Similar to European village squares.
         </p>
         <div class="btn-section">
           <a href="#projects" title="learn more about hip projects" class="btn-default">Learn More <span class="sr-only">about HIP Projects</span></a>
@@ -253,10 +316,172 @@
   <div class="container">
     <div class="text-center">
       <!-- Feature Title -->
-      <h2>HIP <span class="highlight">PROJECTS</h2>
-      <p>All of these brands fall under the HIP Projects umbrella</p>
+      <h2>HIP <span class="highlight">Communities</h2>
+      <p></p>
       <div class="title-line wow fadeInRight"></div>
     </div>
+    <hr></hr>
+
+    <div class="row">
+
+      <div class="col-sm-12 price-box">
+        <h3>Watkins Mill Town Center</h3>
+        <hr/>
+        <div class="col-xs-2"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left vertical-text">
+            <li class="active"><a href="#overview-v" data-toggle="tab">Overview</a></li>
+            <li><a href="#paramount-v" data-toggle="tab">Paramount</a></li>
+            <li><a href="#majestic-v" data-toggle="tab">Majestic</a></li>
+            <li><a href="#performersPark-v" data-toggle="tab">Performer's Park</a></li>
+            <li><a href="#barkingMad-v" data-toggle="tab">Barking Mad Cafe</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-10 tab-content">
+          <!-- Tab panes -->
+          <div class="tab-pane active" id="overview-v">
+            <div class="col-xs-12 col-md-6 price-heading text-center">
+              <!-- /.project name -->
+              <h3>Watkins Mill Overview</h3>
+              <!-- /.project image link -->
+              <a href="http://www.paramount355.com/" title="Watkins Mill Website" target="_blank">
+                <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                <img src="img/projects/watkins_mill.png" alt="Watkins Mill" class="project-img"/>
+              </a>
+            </div>
+            <div class="col-xs-12 col-md-6 project-text">
+              <p>
+                At its heart of the Spectrum is Performers Park, which features a large splash pad fountain
+                and a permanent stage for performances and events. Spectrum's residential component includes
+                the 224-unit Paramount East and West apartments and the Majestic, a 243-unit luxury apartment
+                with both public and gated residential parking. The Spectrum is part of the larger Watkins
+                Mill Town Center, slated to include 4.5 million square feet of Class A office, hotel,
+                restaurants, retail and more than 2,200 homes and apartment units.
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane" id="paramount-v">
+              <div class="col-sm-6">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center">
+                    <!-- /.project image link -->
+                    <a href="http://www.paramount355.com/" title="paramount west at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/paramount_west.png" alt="Paramount West" class="project-img"/>
+                    </a>
+                    <!-- /.project name -->
+                    <h3>Paramount West</h3>
+                  </div>
+                  <div class="project-text">
+                    <p>
+                      Providing the architectural edge of Performers Park, Paramount West is a multi-use
+                      apartment building located in the heart of The Spectrum. Paramount West will include
+                      ground level restaurants and will stimulate the environment within Performers Park and
+                      the restaurant space within Paramount will utilize outdoor seating on the park.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center">
+                    <!-- /.project image link -->
+                    <a href="http://www.paramount355.com/" title="paramount east at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/paramount_east.png" alt="Paramount East" class="project-img"/>
+                    </a>
+
+                    <!-- /.project name -->
+                    <h3>Paramount East</h3>
+                  </div>
+                  <div class="project-text">
+                    <p>
+                      Paramount East is a large apartment building located directly across from Performers Park.
+                      Paramount East provides an amenity rich experience for the residence as well as ground
+                      level retail for residents and visitors alike.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="majestic-v">
+            <div class="col-sm-12">
+              <div class="wow fadeInUp">
+                <div class="price-heading text-center col-sm-6">
+                  <!-- /.project name -->
+                  <h3>The Majestic</h3>
+                  <!-- /.project image link -->
+                  <a href="http://www.270majestic.com/" title="the majestic at watkins mill" target="_blank">
+                    <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                    <img src="img/projects/the_majestic.png" alt="The Majestic" class="project-img"/>
+                  </a>
+
+                </div>
+                <div class="project-text col-sm-6">
+                  <p>
+                    The largest apartment building within Spectrum, the majestic includes three
+                    outdoor terraces and a plethora of indoor amenity space overlooking Performers Park.
+                    The Majestic includes ground level retail and restaurant units.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="performersPark-v">
+            <div class="col-sm-12">
+              <div class="wow fadeInUp">
+                <div class="price-heading text-center col-sm-6">
+                  <!-- /.project name -->
+                  <h3>Performer's Park</h3>
+                  <!-- /.project image link -->
+                  <a href="http://www.paramount355.com/" title="performer's park at watkins mill" target="_blank">
+                    <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                    <img src="img/projects/performers_park.png" alt="Performer's Park" class="project-img"/>
+                  </a>
+                </div>
+                <div class="project-text col-sm-6">
+                  <p>
+                    Performers Park will provide an exciting place for the community to come and be
+                    entertained. A splash pad will provide outdoor fun for children and a stage with
+                    programmed events will provide entertainment for people of all ages. The park will
+                    be used for large community events and shows.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="barkingMad-v">
+              <div class="col-sm-12">
+                <div class="wow fadeInUp">
+                  <div class="price-heading text-center col-sm-6">
+                    <!-- /.project name -->
+                    <h3>Barking Mad Cafe</h3>
+                    <!-- /.project image link -->
+                    <a href="//www.barkingmadcafe.com/home" title="barking mad cafe at watkins mill" target="_blank">
+                      <!-- <img src="https://iareintelligent.github.io/HIP_landing_page/img/project1.png" class="project-img"/> -->
+                      <img src="img/projects/barking_mad.png" alt="Barking Mad" class="project-img"/>
+                    </a>
+                  </div>
+                  <div class="project-text col-sm-6">
+                    <p>
+                      With 100+ outdoor seats that overlook Performer's Park, Barking Mad Cafe offers
+                      super premium coffee and scratch-baked sweets and savories Pizzas are cooked in a wood
+                      hearth, farm-to-table food is paired with specialty cocktails and house
+                      infusions. A number of ingredients are grown on-site with our aeroponic, organic
+                      garden where we grow vegetables, herbs and edible flowers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+
     <div class="row package-option">
       <div class="row">
         <!-- /OVERALL -->
@@ -485,7 +710,7 @@
 </section>
 
 <!-- /.contact section -->
-<section id="contact" class="widescreen">
+<section id="contact">
   <div class="contact fullscreen parallax" data-img-width="2000" data-img-height="1334" data-diff="100">
     <div class="overlay">
       <div class="container">
@@ -554,7 +779,8 @@
 
   <!-- /.javascript files -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.sticky.js"></script>
   <script src="js/wow.min.js"></script>
@@ -562,5 +788,10 @@
   <script>
     new WOW().init();
   </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>
   </body>
 </html>
