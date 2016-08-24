@@ -1807,7 +1807,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
 
   $(document).on('click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
     e.preventDefault()
-    debugger;
     $(this).tab('show')
   })
 
